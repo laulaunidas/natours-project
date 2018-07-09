@@ -52,10 +52,28 @@
     opacity:0;
     transform: translate(-50%, -50%) scale(.25);
     transition: all .4s .2s;
+
+    @include respond(tab-land){
+      display: block;
+    }
+    @include respond(phone){
+     position: relative;
+     display: block;
+   
+    }
   }
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tab-land){
+      display: block;
+      width: 100%;
+     }
+
+    @include respond(phone){
+      display: none;
+     }
   }
 
   &__right {
@@ -63,10 +81,36 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+
+    
+    @include respond(tab-land){
+      display: block;
+      width: 100%;
+     }
+
+    @include respond(phone){
+      display: block;
+      width:  100%;
+     }
   }
   &__img {
     display: block;
     width: 100%;
+
+
+    
+    @include respond(tab-land){
+    float: left;
+    width: 50%;
+    height: 30rem;
+    margin-bottom: 2rem;
+    background-size: cover;
+     }
+
+    @include respond(phone){
+      display: none;
+     }
   }
   &__text {
       font-size: 1.4rem;
@@ -85,5 +129,10 @@
       -webkit-hyphens: auto;
       -ms-hyphens: auto;
       hyphens: auto;
+
+      
+    @include respond(phone){
+      column-count:1;
+     }
   }
 }
