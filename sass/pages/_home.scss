@@ -86,6 +86,7 @@
       ),
       url(../img/nat-10.jpg);
   }
+  // pour une resolution superieur à 900px
   @media (min-resolution: 192dpi) and (min-width: 75.1em) {
     // 600 / 16 = 37.5em car 1em = 16px
     background-image: linear-gradient(
