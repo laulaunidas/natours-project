@@ -17,17 +17,34 @@
 <body>
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
         <div class="navigation__background">
             &nbsp;
         </div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="" class="navigation__link"><span>01</span>About natours</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>02</span>Your benefits</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>03</span>Popular tours</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>04</span>Stories</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>05</span>Book now</a></li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <span>01</span>About natours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <span>02</span>Your benefits</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <span>03</span>Popular tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <span>04</span>Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <span>05</span>Book now</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -137,7 +154,7 @@
 
         <!-- section tours -->
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -172,7 +189,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
 
@@ -206,7 +223,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -239,7 +256,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -372,13 +389,37 @@
                 <p class="footer__copyright">
                     Built by
                     <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course
-                    <a href="#" class="footer__link">Advances CSS and SASS </a>. Copyright &copy; by jonas. You are 100% allowed to use this webpage for both personal
-                    and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
-                    Schmedtmann, is of course highly appreciated!
+                    <a href="#" class="footer__link">Advances CSS and SASS </a>. Copyright &copy; by jonas. You are 100% allowed to use this webpage for both
+                    personal and commercial use, but NOT to claim it as your own design. A credit to the original author,
+                    Jonas Schmedtmann, is of course highly appreciated!
                 </p>
+
             </div>
         </div>
     </footer>
+
+    <!-- modal -->
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read thes terms before booking</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor sem, euismod at viverra sed, pharetra sit
+                    amet nunc. Etiam molestie orci quis elit ultrices, a vehicula ligula volutpat. Vivamus eu maximus eros.
+                    Duis euismod sapien ante, ac volutpat lacus rutrum eu. Integer lobortis semper arcu, sed blandit risus
+                    varius ut. Nullam eu ligula in risus tincidunt gravida. Donec a libero dui. Nunc scelerisque, quam et
+                    scelerisque pretium, sem est vehicula augue, in scelerisque nunc dolor vel justo. Sed congue varius nunc
+                    ac semper. Aenean vestibulum quam lacus, sed dapibus nibh volutpat sit amet. Morbi nec erat vitae lacus
+                    eleifend tempus. Ut ut tellus nisi. Sed aliquam tellus metus, non hendrerit mauris tristique sit amet.</p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
 
     <!-- template grid
     <section class="grid-test">
